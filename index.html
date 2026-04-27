@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avdey Axonov | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -48,7 +51,7 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="reveal">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
                 <article class="project-card">
@@ -99,7 +102,7 @@
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="reveal">
             <h2>Skills & Expertise</h2>
             <div class="skills-container">
                 <div class="skill-category">
@@ -130,7 +133,7 @@
             </div>
         </section>
 
-        <section id="resume">
+        <section id="resume" class="reveal">
             <h2>Resume</h2>
             <div class="resume-content">
                 <div class="resume-section">
@@ -161,7 +164,7 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="reveal">
             <h2>Let's Connect</h2>
             <p>Interested in working together? I'd love to hear from you.</p>
             <div class="social-links">
@@ -216,6 +219,25 @@
                 });
             });
         });
+
+        const revealElements = document.querySelectorAll('.reveal');
+        document.querySelectorAll('.project-card').forEach((card, index) => {
+            card.classList.add('reveal');
+            card.style.transitionDelay = `${index * 0.15}s`;
+        });
+
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            const revealThreshold = 100;
+            revealElements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                if (elementTop < windowHeight - revealThreshold) {
+                    el.classList.add('visible');
+                }
+            });
+        };
+        revealOnScroll();
+        window.addEventListener('scroll', revealOnScroll);
     </script>
 </body>
 </html>
