@@ -19,6 +19,21 @@
     --gradient: linear-gradient(135deg, #00d4aa 0%, #00a3ff 100%);
 }
 
+[data-theme="light"] {
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f0f0f2;
+    --text-primary: #1a1a1a;
+    --text-secondary: #555555;
+    --text-muted: #888888;
+    --accent: #00a381;
+    --accent-hover: #00c49a;
+    --accent-dim: rgba(0, 163, 129, 0.12);
+    --border: #e0e0e5;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --gradient: linear-gradient(135deg, #00a381 0%, #0088cc 100%);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -35,7 +50,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(10, 10, 15, 0.9);
+    background: var(--bg-secondary);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     z-index: 100;
@@ -48,6 +63,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .nav-brand {
@@ -57,6 +73,12 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 .nav-links {
@@ -103,6 +125,42 @@ header {
     border: none;
     cursor: pointer;
     padding: 5px;
+}
+
+.theme-toggle {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.5rem 0.65rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent);
+    transform: scale(1.05);
+}
+
+[data-theme="light"] .theme-toggle .fa-moon {
+    display: none;
+}
+
+[data-theme="light"] .theme-toggle .fa-sun {
+    display: inline;
+}
+
+.theme-toggle .fa-sun {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .fa-sun {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .fa-moon {
+    display: inline;
 }
 
 .nav-toggle span {
@@ -490,6 +548,14 @@ footer {
 @media (max-width: 768px) {
     .nav-toggle {
         display: flex;
+    }
+
+    .theme-toggle {
+        display: flex;
+    }
+
+    .nav-actions {
+        gap: 0.5rem;
     }
 
     .nav-links {
