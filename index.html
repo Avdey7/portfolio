@@ -274,11 +274,12 @@
             });
         });
 
-        const revealElements = document.querySelectorAll('.reveal');
         document.querySelectorAll('.project-card').forEach((card, index) => {
             card.classList.add('reveal');
             card.style.transitionDelay = `${index * 0.15}s`;
         });
+
+        const revealElements = document.querySelectorAll('.reveal');
 
         const revealOnScroll = () => {
             const windowHeight = window.innerHeight;
