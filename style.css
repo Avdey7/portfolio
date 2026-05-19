@@ -299,7 +299,15 @@ p {
     font-size: 1.35rem;
     color: var(--accent);
     font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.availability {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
     margin-bottom: 1rem;
+    letter-spacing: 0.01em;
 }
 
 .bio {
@@ -353,8 +361,15 @@ p {
 }
 
 .projects-grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
+    justify-content: center;
+}
+
+.project-card {
+    flex: 1 1 280px;
+    max-width: 100%;
 }
 
 .project-card {
@@ -365,6 +380,8 @@ p {
     transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s, opacity 0.6s ease-out;
     opacity: 0;
     transform: translateY(30px);
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card.visible {
@@ -406,9 +423,30 @@ p {
     transform: scale(1.15);
 }
 
+.project-context {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-context.dod {
+    color: var(--accent);
+    border-color: rgba(0, 212, 170, 0.3);
+    background: var(--accent-dim);
+}
+
 .project-card p {
     font-size: 0.95rem;
     margin-bottom: 1rem;
+    flex: 1;
 }
 
 .tech-tags {
@@ -430,6 +468,7 @@ p {
 .skills-container {
     display: grid;
     gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .skill-category {
@@ -499,7 +538,7 @@ p {
 .resume-item {
     margin-bottom: 1.25rem;
     padding-left: 1rem;
-    border-left: 2px solid var(--border);
+    border-left: 2px solid var(--accent);
 }
 
 .resume-item h4 {
@@ -573,6 +612,53 @@ p {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+    resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.contact-form .btn {
+    align-self: center;
+}
+
 footer {
     text-align: center;
     padding: 2.5rem;
@@ -629,18 +715,18 @@ footer {
     }
 }
 
-@media (min-width: 600px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr;
     }
 
-    .skills-container {
-        grid-template-columns: repeat(2, 1fr);
+    .form-row {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (min-width: 900px) {
-    .projects-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .project-card {
+        max-width: calc(33.333% - 1rem);
     }
 }
