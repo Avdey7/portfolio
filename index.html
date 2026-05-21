@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div id="progress-bar"></div>
+    <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
     <header>
         <nav class="navbar">
             <div class="nav-brand">AA</div>
@@ -47,9 +49,10 @@
             <div class="hero-content">
                 <div class="profile-container">
                     <img src="assets/profile.webp" alt="Avdey Axonov" class="profile-img" id="profile-img">
+                    <span class="open-to-work">Open to Work</span>
                 </div>
                 <h1>Avdey Axonov</h1>
-                <p class="tagline">Cybersecurity & Full-Stack Developer</p>
+                <p class="tagline"><span id="typed-text"></span><span class="cursor"></span></p>
                 <p class="availability">CS Graduate &nbsp;·&nbsp; Open to full-time cybersecurity &amp; SWE roles</p>
                 <p class="bio">Hands-on experience in penetration testing, digital forensics, and full-stack web development. Skilled in building secure applications and producing structured technical documentation aligned to industry standards.</p>
                 <div class="hero-cta">
@@ -326,6 +329,38 @@
                 });
             });
         });
+
+        // Scroll progress bar + back to top
+        const progressBar = document.getElementById('progress-bar');
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const total = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.style.width = (scrolled / total * 100) + '%';
+            backToTop.classList.toggle('visible', scrolled > 400);
+        });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // Typing animation
+        const roles = ['Cybersecurity Engineer', 'Penetration Tester', 'Full-Stack Developer', 'Digital Forensics Analyst'];
+        const typedEl = document.getElementById('typed-text');
+        let roleIdx = 0, charIdx = 0, deleting = false;
+        function type() {
+            const current = roles[roleIdx];
+            typedEl.textContent = deleting ? current.slice(0, charIdx--) : current.slice(0, charIdx++);
+            if (!deleting && charIdx > current.length) {
+                deleting = true;
+                return setTimeout(type, 1800);
+            }
+            if (deleting && charIdx < 0) {
+                deleting = false;
+                roleIdx = (roleIdx + 1) % roles.length;
+                charIdx = 0;
+                return setTimeout(type, 400);
+            }
+            setTimeout(type, deleting ? 45 : 80);
+        }
+        setTimeout(type, 700);
 
         // Active nav highlight
         const sections = document.querySelectorAll('main section[id]');
