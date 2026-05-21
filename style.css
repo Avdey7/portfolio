@@ -126,6 +126,14 @@ header {
     position: relative;
 }
 
+.nav-links a.active {
+    color: var(--accent);
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -657,6 +665,22 @@ p {
 
 .contact-form .btn {
     align-self: center;
+}
+
+.form-success {
+    text-align: center;
+    color: var(--accent);
+    font-weight: 500;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.form-success.visible {
+    max-height: 2rem;
+    opacity: 1;
 }
 
 footer {
