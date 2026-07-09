@@ -666,13 +666,27 @@ p { color: var(--text-secondary); margin-bottom: 1rem; }
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 1rem;
-    transition: border-color 0.12s, box-shadow 0.12s;
+    position: relative;
+    transition: border-color 0.12s, box-shadow 0.12s, transform 0.12s;
 }
+
+a.cert-card { text-decoration: none; color: inherit; }
 
 .cert-card:hover {
     border-color: var(--accent);
     box-shadow: 0 4px 16px rgba(245, 158, 11, 0.1);
 }
+a.cert-card:hover { transform: translateY(-3px); }
+
+.cert-ext {
+    position: absolute;
+    top: 0.75rem; right: 0.8rem;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    opacity: 0.55;
+    transition: opacity 0.12s, color 0.12s;
+}
+a.cert-card:hover .cert-ext { opacity: 1; color: var(--accent); }
 
 .cert-icon {
     width: 36px;
