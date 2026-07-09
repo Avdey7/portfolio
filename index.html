@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avdey Axonov | Cybersecurity & Full-Stack Developer</title>
-    <meta name="description" content="Avdey Axonov — CS graduate specializing in cybersecurity, penetration testing, and full-stack web development. GPA 3.88, UNCC. Available for full-time roles.">
-    <meta property="og:title" content="Avdey Axonov | Cybersecurity & Full-Stack Developer">
-    <meta property="og:description" content="CS graduate specializing in penetration testing, digital forensics, and secure full-stack development. Available for full-time roles.">
+    <title>Avdey Axonov | IT Support Specialist &amp; Cybersecurity</title>
+    <meta name="description" content="Avdey Axonov — Tier 1/Tier 2 IT Support Specialist in Charlotte, NC. Google IT Support certified, CompTIA A+ in progress, B.S. Cyber Security (Magna Cum Laude, GPA 3.89). Hardware, networking, endpoint security, and help desk support.">
+    <meta property="og:title" content="Avdey Axonov | IT Support Specialist & Cybersecurity">
+    <meta property="og:description" content="Tier 1/Tier 2 IT Support Specialist. Google IT Support certified, CompTIA A+ in progress, B.S. Cyber Security. Hardware, networking, endpoint security, and help desk.">
     <meta property="og:image" content="https://avdey7.github.io/portfolio/assets/profile.webp">
     <meta property="og:url" content="https://avdey7.github.io/portfolio/">
     <meta property="og:type" content="website">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='15' fill='%2300d4aa'/><text x='50' y='72' font-family='sans-serif' font-size='48' font-weight='700' text-anchor='middle' fill='%230a0a0f'>AA</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='15' fill='%23f59e0b'/><text x='50' y='72' font-family='sans-serif' font-size='48' font-weight='700' text-anchor='middle' fill='%230a0a0f'>AA</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,9 +26,10 @@
             <div class="nav-actions">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certs">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
@@ -50,267 +51,337 @@
                 <div class="profile-container">
                     <img src="assets/profile.webp" alt="Avdey Axonov" class="profile-img" id="profile-img">
                 </div>
+                <span class="open-badge"><span class="dot"></span> Open to Tier 1 / Tier 2 IT Support roles</span>
                 <h1>Avdey Axonov</h1>
-                <p class="tagline">Cybersecurity & Full-Stack Developer</p>
-                <p class="availability">CS Graduate &nbsp;·&nbsp; GPA 3.89 &nbsp;·&nbsp; Open to full-time cybersecurity &amp; SWE roles</p>
-                <p class="bio">Hands-on experience in penetration testing, digital forensics, and full-stack web development. Skilled in building secure applications and producing structured technical documentation aligned to industry standards.</p>
+                <p class="tagline">IT Support Specialist &middot; Desktop &amp; Field Support</p>
+                <p class="availability"><i class="fas fa-location-dot"></i> Charlotte, NC &nbsp;·&nbsp; B.S. Cyber Security &nbsp;·&nbsp; Cybersecurity foundation, SOC-analyst trajectory</p>
+                <p class="bio">I work from one conviction: everything is fixable. I trace a misbehaving system to its failing component and resolve it, whether that's a dead network link, a malware-riddled endpoint, or a live audio signal chain in front of a full room. Methodical, full-stack-trained Tier 1/Tier 2 support built on a cybersecurity foundation.</p>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="assets/Avdey_Axonov_Resume.pdf" class="btn btn-outline" download><i class="fas fa-download"></i> Resume</a>
+                    <a href="#experience" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-num">3.89</span><span class="stat-label">GPA · Magna Cum Laude</span></div>
+                    <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Certifications</span></div>
+                    <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Yrs Hands-On Support</span></div>
+                    <div class="stat"><span class="stat-num">3</span><span class="stat-label">Live Portfolio Projects</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="reveal">
+            <h2>Experience &amp; Education</h2>
+            <div class="resume-content">
+                <div class="resume-section">
+                    <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+                    <div class="resume-item">
+                        <h4>IT Support Specialist</h4>
+                        <p class="institution">Independent Contractor — Charlotte, NC</p>
+                        <p class="date">Sep 2021 – Present</p>
+                        <ul>
+                            <li>Harden endpoints for 3 clients and a compromised home server via OS patching, malware removal, and network-wide spam filtering; eliminated recurring infections, keeping all devices clean for 2 consecutive years.</li>
+                            <li>Restore service after outages by reconfiguring routers/modems and coordinating ISP handoffs; clear no-link conditions in 1.5–2 hours in a single visit with zero follow-up.</li>
+                            <li>Cut repeat-incident resolution time ~50% by identifying recurring failure patterns (Wi-Fi drops, Bluetooth pairing, driver conflicts) and writing diagnostic SOPs.</li>
+                            <li>Sole IT contact for 7 devices across 3 users, triaging and closing desktop, mobile, peripheral, and network requests with zero escalations.</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Operations &amp; End-User Support Lead</h4>
+                        <p class="institution">Church of New Hope — Matthews, NC</p>
+                        <p class="date">Aug 2020 – Aug 2024</p>
+                        <ul>
+                            <li>Set up and managed AV equipment, laptops, and projectors for daily events of ~95 attendees; troubleshot hardware and connectivity issues within 5 minutes to minimize delays.</li>
+                            <li>Coordinated daily schedules and supervised a team of 9; supported senior management during administrative meetings with zero incidents.</li>
+                            <li>Main point of contact across 6 groups; translated schedules and policies into non-technical language, keeping 35 staff and volunteers aligned.</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Audio Systems Engineer</h4>
+                        <p class="institution">Church of New Hope — Matthews, NC</p>
+                        <p class="date">Jan 2019 – Nov 2020</p>
+                        <ul>
+                            <li>Set up, tested, and maintained audio systems (Behringer X32 console, stage monitors, DI boxes, structured cabling) for 45+ live events averaging 150+ attendees.</li>
+                            <li>Diagnosed signal-chain failures in real time under pressure using systematic isolation, maintaining a 90% success rate.</li>
+                            <li>Supported presenters and event staff in real time, translating technical faults into clear, non-technical guidance.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Education &amp; Training</h3>
+                    <div class="resume-item">
+                        <h4>B.S. in Cyber Security</h4>
+                        <p class="institution">University of North Carolina at Charlotte</p>
+                        <p class="date">May 2026 &nbsp;·&nbsp; GPA 3.89 / 4.00 &nbsp;·&nbsp; Magna Cum Laude</p>
+                        <ul>
+                            <li>Relevant coursework: Networking &amp; Network Security, Penetration Testing, Digital Forensics, Systems Administration.</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>IT Support Specialist Training</h4>
+                        <p class="institution">Per Scholas (Hybrid) — Charlotte, NC</p>
+                        <p class="date">Expected Aug 2026</p>
+                        <ul>
+                            <li>Diagnosed OS-level faults across hands-on labs: boot failures, driver conflicts, BIOS misconfiguration.</li>
+                            <li>Assembled and provisioned PCs from bare components; hand-terminated CAT cabling, winning a cohort competition for fastest RJ45 termination (both ends in just over one minute).</li>
+                            <li>Triaged and resolved connectivity faults in Issue Trax during simulated help desk labs, documenting fixes to mirror real-world queue management.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2>Skills &amp; Tools</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Operating Systems</h3>
+                    <ul class="skill-list">
+                        <li>Windows 7/8.1/10/11</li>
+                        <li>Linux</li>
+                        <li>macOS</li>
+                        <li>OS Imaging &amp; Deployment</li>
+                        <li>Patch Management</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> Hardware &amp; Devices</h3>
+                    <ul class="skill-list">
+                        <li>PC Components &amp; Peripherals</li>
+                        <li>Install / Repair / Maintenance</li>
+                        <li>Break/Fix</li>
+                        <li>Hardware Provisioning</li>
+                        <li>Hardware Troubleshooting</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-network-wired"></i> Networking</h3>
+                    <ul class="skill-list">
+                        <li>TCP/IP</li>
+                        <li>DNS</li>
+                        <li>DHCP</li>
+                        <li>Router &amp; Modem Config</li>
+                        <li>VPN</li>
+                        <li>Wireshark</li>
+                        <li>Home Network Setup</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-halved"></i> Security</h3>
+                    <ul class="skill-list">
+                        <li>Malware Removal &amp; Remediation</li>
+                        <li>Spam Filtering</li>
+                        <li>Active Directory</li>
+                        <li>Endpoint Hardening</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-headset"></i> Ticketing &amp; Support</h3>
+                    <ul class="skill-list">
+                        <li>Help Desk</li>
+                        <li>Ticket Triage</li>
+                        <li>Remote Support (RDP)</li>
+                        <li>Ticketing Systems</li>
+                        <li>Technical Documentation</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-toolbox"></i> Software &amp; Tools</h3>
+                    <ul class="skill-list">
+                        <li>Microsoft 365</li>
+                        <li>Git / GitHub</li>
+                        <li>VirtualBox</li>
+                        <li>LXD</li>
+                        <li>FTK Imager</li>
+                        <li>Autopsy</li>
+                        <li>KAPE</li>
+                        <li>Burp Suite</li>
+                        <li>OWASP ZAP</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming &amp; Scripting</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>SQL</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-comments"></i> Core Strengths</h3>
+                    <ul class="skill-list">
+                        <li>Root-Cause Analysis</li>
+                        <li>Incident Response Under Pressure</li>
+                        <li>Technical Writing &amp; SOPs</li>
+                        <li>End-User Communication</li>
+                        <li>Team Leadership</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="reveal">
-            <h2>Featured Projects</h2>
+            <h2>Projects &amp; Portfolio</h2>
             <div class="projects-grid">
                 <article class="project-card">
                     <div class="project-header">
-                        <h3>TuneStore Web App Penetration Test</h3>
+                        <h3>IT Support Runbooks</h3>
                         <div class="project-links">
-                            <a href="https://github.com/Avdey7" target="_blank" aria-label="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Avdey7" target="_blank" rel="noopener" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <span class="project-context">UNC Charlotte</span>
-                    <p>Multi-phase penetration test against a simulated e-commerce application. Identified and exploited SQL injection, stored/reflected XSS, CSRF, broken access control, DOM-based XSS, and clickjacking. Produced structured reports with CVSS-aligned risk ratings and remediation recommendations.</p>
+                    <span class="project-context live">Live · GitHub</span>
+                    <p>Public, field-tested runbooks that standardize recurring desktop-support fixes: Wi-Fi drops, Bluetooth pairing failures, and driver conflicts. Written to mirror clean Tier 1 ticket documentation an escalation team can act on immediately.</p>
                     <div class="tech-tags">
-                        <span class="tech-tag">Burp Suite</span>
-                        <span class="tech-tag">SQL Injection</span>
-                        <span class="tech-tag">XSS</span>
-                        <span class="tech-tag">CSRF</span>
-                        <span class="tech-tag">CVSS</span>
+                        <span class="tech-tag">SOPs</span>
+                        <span class="tech-tag">Troubleshooting</span>
+                        <span class="tech-tag">Documentation</span>
                     </div>
                 </article>
                 <article class="project-card">
                     <div class="project-header">
                         <h3>Digital Forensics Investigations</h3>
                         <div class="project-links">
-                            <a href="https://github.com/Avdey7" target="_blank" aria-label="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Avdey7" target="_blank" rel="noopener" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <span class="project-context">UNC Charlotte</span>
-                    <p>Extracted and analyzed data from file systems, registry hives, and network logs using FTK Imager and KAPE. Synthesized findings into structured SANS-format reports with clear, factual documentation aligned to industry standards.</p>
+                    <p>E01 image acquisition with hash verification, KAPE triage, and Windows registry hive parsing (UserAssist, ShimCache, ShellBags, USBSTOR). SQLite recovery of browser and messaging artifacts with timeline correlation, reported in strict fact-only SANS/DFIR format.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">FTK Imager</span>
+                        <span class="tech-tag">Autopsy</span>
                         <span class="tech-tag">KAPE</span>
-                        <span class="tech-tag">Wireshark</span>
-                        <span class="tech-tag">SANS</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">NIST SP 800-86</span>
                     </div>
                 </article>
                 <article class="project-card">
                     <div class="project-header">
-                        <h3>Full-Stack Secure Web Application</h3>
+                        <h3>TuneStore Pen Test &amp; Hardening</h3>
                         <div class="project-links">
-                            <a href="https://github.com/Avdey7" target="_blank" aria-label="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Avdey7" target="_blank" rel="noopener" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <span class="project-context">UNC Charlotte</span>
-                    <p>TypeScript/Express.js/MongoDB application with JWT authentication, role-based access control, and parameterized queries. Responsive React front end with clean separation between UI and business logic.</p>
+                    <p>Audited a web application against the OWASP Top 10 (SQL injection, XSS, CSRF, SSRF, IDOR), then built the defenses: parameterized queries, context-sensitive output encoding, Apache Shiro RBAC, and a custom SecurityEnhancedAPI. Knowing how apps break makes hardening and support faster.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">OWASP ZAP</span>
+                        <span class="tech-tag">Burp Suite</span>
+                        <span class="tech-tag">SQLi / XSS</span>
+                        <span class="tech-tag">Apache Shiro</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>BookmarkHub</h3>
+                        <div class="project-links">
+                            <a href="https://itis4166-04.onrender.com" target="_blank" rel="noopener" aria-label="View live site"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Avdey7" target="_blank" rel="noopener" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <span class="project-context live">Live · Full-Stack</span>
+                    <p>Live-deployed bookmark management app. Led the frontend from design through deployment, building a responsive React interface with clean separation between UI and business logic on an Express.js and MongoDB backend.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vite</span>
                         <span class="tech-tag">TypeScript</span>
                         <span class="tech-tag">Express.js</span>
                         <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">JWT</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Web Application Vulnerability Assessment</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Avdey7" target="_blank" aria-label="View Code"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <span class="project-context">UNC Charlotte</span>
-                    <p>Structured technical assessments across enterprise-simulated environments. Analyzed application behavior, traced data flows, and documented findings with validation steps and actionable remediation recommendations.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">OWASP</span>
-                        <span class="tech-tag">Nmap</span>
-                        <span class="tech-tag">Burp Suite</span>
-                        <span class="tech-tag">Metasploit</span>
                     </div>
                 </article>
                 <article class="project-card">
                     <div class="project-header">
                         <h3>DoD Cyber Sentinel Skills Challenge</h3>
                         <div class="project-links">
-                            <a href="https://github.com/Avdey7" target="_blank" aria-label="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Avdey7" target="_blank" rel="noopener" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <span class="project-context dod">DoD-Sponsored · June 2025</span>
-                    <p>Competed in a DoD-sponsored CTF covering Forensics, Malware/Reverse Engineering, Networking & Reconnaissance, OSINT, and Web Security. Applied problem-solving under time pressure across unfamiliar technical environments.</p>
+                    <span class="project-context dod">DoD-Sponsored · Jun 2025</span>
+                    <p>Competed in a DoD-sponsored CTF covering forensics, malware and reverse engineering, networking and reconnaissance, OSINT, and web security. Applied structured problem-solving under time pressure across unfamiliar technical environments.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">CTF</span>
                         <span class="tech-tag">Forensics</span>
                         <span class="tech-tag">OSINT</span>
-                        <span class="tech-tag">Reverse Engineering</span>
                         <span class="tech-tag">Web Security</span>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="skills" class="reveal">
-            <h2>Skills & Expertise</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> Technical Skills</h3>
-                    <ul class="skill-list">
-                        <li>Penetration Testing</li>
-                        <li>Vulnerability Assessment</li>
-                        <li>Digital Forensics</li>
-                        <li>Secure Coding Practices</li>
-                        <li>Full-Stack Web Development</li>
-                        <li>Risk & Compliance Reporting</li>
-                        <li>REST API Design</li>
-                        <li>Data Schema Modeling</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
-                    <ul class="skill-list">
-                        <li>Burp Suite</li>
-                        <li>Wireshark</li>
-                        <li>Nmap</li>
-                        <li>Metasploit</li>
-                        <li>FTK Imager</li>
-                        <li>KAPE</li>
-                        <li>React</li>
-                        <li>Express.js</li>
-                        <li>Node.js</li>
-                        <li>MongoDB</li>
-                        <li>JWT</li>
-                        <li>Git / GitHub</li>
-                        <li>NIST CSF</li>
-                        <li>OWASP</li>
-                        <li>ISO 27001</li>
-                        <li>IEC 62443</li>
-                        <li>CompTIA A+ (in progress)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
-                    <ul class="skill-list">
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>Java</li>
-                        <li>SQL</li>
-                        <li>Bash</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
-                    <ul class="skill-list">
-                        <li>Communication</li>
-                        <li>Problem Solving</li>
-                        <li>Technical Writing</li>
-                        <li>Team Leadership</li>
-                        <li>Works Under Pressure</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="resume" class="reveal">
-            <h2>Resume</h2>
-            <div class="resume-content">
-                <div class="resume-section">
-                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-                    <div class="resume-item">
-                        <h4>B.S. Computer Science, Concentration in Cybersecurity</h4>
-                        <p class="institution">University of North Carolina at Charlotte</p>
-                        <p class="date">Aug 2022 – May 2026 | GPA: 3.89</p>
-                        <ul>
-                            <li>Penetration Testing, Computer Forensics, Competitive Cyber Defense</li>
-                            <li>Usable Security & Privacy, Network-Based Application Development</li>
-                            <li>Introduction to Machine Learning, Systems Administration</li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Professional Certificate — Technical Support with AI Integration</h4>
-                        <p class="institution">Per Scholas</p>
-                        <p class="date">May 2026 – Sep 2026</p>
-                        <ul>
-                            <li>15-week intensive training program preparing for CompTIA A+ certification</li>
-                            <li>Hardware/software troubleshooting, OS, networking, ticketing systems, end-user support</li>
-                            <li>Applied AI integration using modern LLM tooling for triage and documentation workflows</li>
-                        </ul>
+        <section id="certs" class="reveal">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-headset"></i></div>
+                    <div class="cert-info">
+                        <h4>Google IT Support Professional Certificate</h4>
+                        <p class="institution">Coursera</p>
+                        <p class="date">Jul 2026 · ID XNMRHC5MO0OO</p>
                     </div>
                 </div>
-                <div class="resume-section">
-                    <h3><i class="fas fa-briefcase"></i> Experience</h3>
-                    <div class="resume-item">
-                        <h4>Kids' Camp Leader</h4>
-                        <p class="institution">Church of New Hope</p>
-                        <p class="date">2020 – Present</p>
-                        <ul>
-                            <li>Coordinated multi-day events and managed volunteer teams across planning and execution phases</li>
-                            <li>Communicated updates and logistics to stakeholders, balancing operational details with team morale</li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Audio Systems Engineer</h4>
-                        <p class="institution">Church of New Hope</p>
-                        <p class="date">2019 – 2020</p>
-                        <ul>
-                            <li>Managed live technical systems for large-scale events with hundreds of attendees</li>
-                            <li>Diagnosed and resolved complex audio and signal-routing issues under time pressure</li>
-                        </ul>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-plus"></i></div>
+                    <div class="cert-info">
+                        <h4>CompTIA A+</h4>
+                        <p class="institution">CompTIA</p>
+                        <p class="date"><span class="badge-progress">In Progress</span> Expected Aug 2026</p>
                     </div>
                 </div>
-                <div class="resume-section">
-                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
-                    <div class="cert-grid">
-                        <div class="cert-card">
-                            <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
-                            <div class="cert-info">
-                                <h4>DoD Cyber Sentinel Skills Challenge</h4>
-                                <p class="institution">Correlation One</p>
-                                <p class="date">June 2025 · ID: 150528089</p>
-                            </div>
-                        </div>
-                        <div class="cert-card">
-                            <div class="cert-icon"><i class="fas fa-microchip"></i></div>
-                            <div class="cert-info">
-                                <h4>Computer Hardware Basics</h4>
-                                <p class="institution">Cisco Networking Academy</p>
-                                <p class="date">May 2026</p>
-                            </div>
-                        </div>
-                        <div class="cert-card">
-                            <div class="cert-icon"><i class="fab fa-linux"></i></div>
-                            <div class="cert-info">
-                                <h4>Operating Systems Basics</h4>
-                                <p class="institution">Cisco Networking Academy</p>
-                                <p class="date">May 2026</p>
-                            </div>
-                        </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <div class="cert-info">
+                        <h4>Google AI Professional Certificate</h4>
+                        <p class="institution">Coursera</p>
+                        <p class="date">Jul 2026 · ID 12IOYM4G4EJK</p>
                     </div>
                 </div>
-                <div class="resume-download">
-                    <a href="assets/Avdey_Axonov_Resume.pdf" class="btn btn-primary" download>
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <div class="cert-info">
+                        <h4>Google AI Essentials</h4>
+                        <p class="institution">Coursera</p>
+                        <p class="date">Jul 2026 · ID JMT386FLTIFG</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+                    <div class="cert-info">
+                        <h4>Hardware &amp; Operating Systems Basics</h4>
+                        <p class="institution">Cisco Networking Academy</p>
+                        <p class="date">May 2026</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="cert-info">
+                        <h4>DoD Cyber Sentinel Skills Challenge</h4>
+                        <p class="institution">Correlation One</p>
+                        <p class="date">Jun 2025 · ID 150528089</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="reveal">
             <h2>Let's Connect</h2>
-            <p>Interested in working together? I'd love to hear from you.</p>
+            <p>Looking for methodical, low-escalation Tier 1/Tier 2 support? I'd love to hear from you.</p>
             <div class="social-links">
-                <a href="https://github.com/Avdey7" target="_blank" class="social-btn">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://linkedin.com/in/avdey-axonov" target="_blank" class="social-btn">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
                 <a href="mailto:avdaxonov@gmail.com" class="social-btn">
                     <i class="fas fa-envelope"></i>
                     <span>Email</span>
+                </a>
+                <a href="https://linkedin.com/in/avdey-axonov" target="_blank" rel="noopener" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Avdey7" target="_blank" rel="noopener" class="social-btn">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="tel:+19803378268" class="social-btn">
+                    <i class="fas fa-phone"></i>
+                    <span>(980) 337-8268</span>
                 </a>
             </div>
             <form class="contact-form" action="https://formspree.io/f/xdajaebv" method="POST">
@@ -334,7 +405,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Avdey Axonov. Built with passion.</p>
+        <p>&copy; 2026 Avdey Axonov &nbsp;·&nbsp; Charlotte, NC &nbsp;·&nbsp; Built from scratch, fixed until it worked.</p>
     </footer>
 
     <script>
@@ -397,7 +468,7 @@
         // Reveal on scroll
         document.querySelectorAll('.project-card').forEach((card, index) => {
             card.classList.add('reveal');
-            card.style.transitionDelay = `${index * 0.15}s`;
+            card.style.transitionDelay = `${index * 0.1}s`;
         });
 
         const revealElements = document.querySelectorAll('.reveal');
